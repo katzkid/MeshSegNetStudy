@@ -1,0 +1,7 @@
+*.csv
+*.vtp
+*.stl
+
+
+augmentation_vtk_data
+flipped_stl_data
