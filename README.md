@@ -1,3 +1,8 @@
+**NOTE: Create your conda environment by running the following command.**
+
+conda env create -f meshseg.yml
+
+
 **MeshSegNet: Deep Multi-Scale Mesh Feature Learning for Automated Labeling of Raw Dental Surface from 3D Intraoral Scanners**
 ==============================================================================================================================
 
