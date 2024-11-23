@@ -3,7 +3,7 @@ import vtk
 
 # Define your file path
 vtp_path = '/home/kartik/Documents/gdrive/MeshSeg/dataset/'
-file_name = 'U1K5LD24_predicted_refined.vtp'  
+file_name = 'U1JJFQ5H_predicted_refined.vtp'  
 
 # Read the mesh
 reader = vtk.vtkXMLPolyDataReader()
@@ -44,7 +44,7 @@ if cell_data.GetNumberOfArrays() > 0:
         array = cell_data.GetArray(i)
         if array:
             for j in range(array.GetNumberOfTuples()):
-                if array.GetValue(j)==13:
+                if j%1000==0:
                     print(f"  Cell {j}: {array.GetValue(j)}")
 else:
     print("No Cell Data.")
